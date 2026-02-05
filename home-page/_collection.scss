@@ -1,0 +1,118 @@
+.collection {
+  padding: 100px 0;
+  width: 100%;
+
+  .collection__container {
+    position: relative;
+    text-align: center;
+  }
+
+  .collection__title-bg {
+    font-family: "Fraunces";
+    font-size: 150px;
+    font-weight: 900;
+    margin: 0;
+    line-height: 1;
+    background: linear-gradient(
+      180deg,
+      rgba(131, 136, 143, 0.5) 0%,
+      rgba(254, 252, 247, 0) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: lowercase;
+  }
+
+  .collection__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: -50px;
+  }
+
+  .collection__item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.7s ease;
+  }
+
+  .collection__item:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    transition: all 0.7s ease;
+  }
+
+  .collection__item:active {
+    border-radius: 10px;
+    background-color: rgb(58, 168, 58);
+    transition: all 0.3s ease;
+  }
+
+  .collection__img {
+    width: 100%;
+    width: 250px;
+    margin-bottom: 30px;
+  }
+
+  .collection__img:active {
+    width: 100%;
+    width: 250px;
+    margin-bottom: 30px;
+    transition: all 1s ease;
+  }
+
+  .collection__name {
+    font-family: "Fraunces";
+    font-size: 24px;
+    color: #333d4b;
+    margin-bottom: 24px;
+  }
+
+  .collection__text {
+    font-family: "Barlow";
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333d4b;
+    max-width: 255px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .collection {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 25px;
+    height: 100%;
+    padding: 100px 0;
+
+    .collection__title-bg {
+      width: 100%;
+      font-family: "Fraunces";
+      font-size: 60px;
+      font-weight: 900;
+      margin: 0;
+      line-height: 1;
+      background: linear-gradient(
+        180deg,
+        rgba(131, 136, 143, 0.5) 0%,
+        rgba(254, 252, 247, 0) 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: lowercase;
+      z-index: -100;
+    }
+
+    .collection__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}
