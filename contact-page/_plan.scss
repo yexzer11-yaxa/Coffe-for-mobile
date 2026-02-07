@@ -1,0 +1,172 @@
+// Цвета
+$dark-blue: #333d4b;
+$cyan: #0e8784;
+$light-grey: #f4f1eb;
+$grey-text: #838589;
+
+// Основная секция
+.plan {
+  padding: 40px 0;
+}
+
+.plan__container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+// Навигация (скрываем на мобилках, если нужно, или просто уменьшаем)
+.plan__navbar {
+  width: 250px;
+}
+
+.plan__item {
+  list-style: none;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: $grey-text;
+  font-weight: bold;
+}
+
+.plan__num {
+  color: $cyan;
+  margin-right: 15px;
+}
+
+// Правая часть с контентом
+.plan__right {
+  width: 70%;
+}
+
+.questions__group {
+  margin-bottom: 60px;
+}
+
+.questions__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.questions__subtitle {
+  font-size: 28px;
+  color: $grey-text;
+}
+
+.questions__arrow {
+  color: $cyan;
+  font-weight: bold;
+}
+
+// Сетка карточек
+.questions__cards-row {
+  display: flex;
+  flex-direction: column; // По умолчанию в колонку для мобилок, ниже переопределим
+  gap: 15px;
+}
+
+.questions__card {
+  background-color: $light-grey;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.questions__card-active {
+  background-color: $cyan;
+}
+
+.questions__card-active .questions__card-title,
+.questions__card-active .questions__card-text {
+  color: #ffffff;
+}
+
+.questions__card-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: $dark-blue;
+}
+
+.questions__card-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: $dark-blue;
+}
+
+// Итог заказа
+.summary {
+  background-color: $dark-blue;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.summary__label {
+  color: $grey-text;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.summary__text {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.summary__span {
+  color: $cyan;
+}
+
+.questions__btn {
+  background-color: $cyan;
+  color: #ffffff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+// АДАПТИВ ПОД 480px
+@media only screen and (max-width: 480px) {
+  .plan__container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .plan__navbar {
+    display: none; // Обычно меню с цифрами на мобилках прячут
+  }
+
+  .plan__right {
+    width: 100%;
+  }
+
+  .questions__subtitle {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .questions__cards-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .questions__card {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .summary__text {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .plan__actions {
+    display: flex;
+    justify-content: center;
+  }
+}
