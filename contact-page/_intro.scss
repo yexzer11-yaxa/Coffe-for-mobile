@@ -1,0 +1,114 @@
+.intro2 {
+  background-image: url("../images/Bitmap\ \(6\).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.intro2__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro2__title {
+  width: 500px;
+  height: 150px;
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #fefcf7;
+}
+
+.intro2__text {
+  width: 445px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+
+  color: #fefcf7;
+
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+@media (max-width: 375px) {
+  .intro2 {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+
+    .intro2__title {
+      width: 250px;
+      margin: auto;
+      font-family: "Fraunces";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 28px;
+      line-height: 35px;
+      color: #fefcf7;
+      text-align: center;
+    }
+
+    .intro2__text {
+      width: 100%;
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+      /* or 162% */
+
+      color: #fefcf7;
+
+      mix-blend-mode: normal;
+      opacity: 0.8;
+      margin: 30px 0;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .intro2__container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .intro2__title {
+      width: 320px;
+      margin: 0 10px;
+      font-family: "Fraunces";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 35px;
+      color: #fefcf7;
+    }
+
+    .intro2__text {
+      width: 70%;
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+      /* or 162% */
+
+      color: #fefcf7;
+
+      mix-blend-mode: normal;
+      opacity: 0.8;
+      margin: 30px 10px;
+    }
+  }
+}

@@ -47,13 +47,13 @@ nav,
   }
 }
 
-@media only screen and (max-width: 480px) {
-  .navbar__container {
+@media (max-width: 375px) {
+  .header {
     width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 25px 25px;
+    margin: 30px auto;
 
     .navbar__list {
       display: none;
@@ -61,12 +61,43 @@ nav,
 
     .navbar__burger {
       display: flex;
+      align-items: end;
+    }
+
+    .navbar__burger {
+      width: 100%;
     }
 
     .header__logo {
-      width: 170px;
+      width: 180px;
       height: auto;
-      margin: 5px 0;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .header {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px auto;
+
+    .navbar__list {
+      display: flex;
+    }
+
+    .navbar__burger {
+      display: none;
+    }
+
+    .navbar__burger {
+      width: 100%;
+    }
+
+    .header__logo {
+      width: 180px;
+      height: auto;
     }
   }
 }

@@ -1,6 +1,6 @@
 .our {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .our__container {
@@ -19,6 +19,7 @@
 
 .our__img {
   margin-left: 70px;
+  border-radius: 20px;
 }
 
 .our__title {
@@ -48,21 +49,108 @@
   margin: 30px 0;
 }
 
-@media only screen and (max-width: 480px) {
-  .our {
+@media (max-width: 375px) {
+  .our__container {
     width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    padding: 15px 0;
+    margin: auto;
 
     .our__img {
       width: 100%;
-      height: auto;
+      margin: auto;
     }
-    .our__left {
-      margin: 25px 0;
-      width: 100%;
-      align-self: center;
+
+    .our__title {
+      width: 90%;
+      font-family: "Fraunces";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 25px;
+      line-height: 25px;
+      /* identical to box height, or 120% */
+      margin: 30px auto;
+      color: #333d4b;
       text-align: center;
+    }
+
+    .our__text {
+      width: 100%;
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      /* or 162% */
+
+      color: #333d4b;
+
+      mix-blend-mode: normal;
+      opacity: 0.8;
+      margin: auto;
+      text-align: center;
+    }
+
+    .our__left {
+      display: flex;
+      align-items: start;
+      justify-content: start;
+      flex-direction: column;
+      margin: auto;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .our__container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+    .our__img {
+      width: 280px;
+      height: 470px;
+      margin: auto;
+    }
+
+    .our__title {
+      width: 90%;
+      font-family: "Fraunces";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 35px;
+      line-height: 35px;
+      /* identical to box height, or 120% */
+      margin: 30px auto;
+      color: #333d4b;
+    }
+
+    .our__text {
+      width: 90%;
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 15px;
+      /* or 162% */
+
+      color: #333d4b;
+
+      mix-blend-mode: normal;
+      opacity: 0.8;
+      margin: auto;
+    }
+
+    .our__left {
+      display: flex;
+      align-items: start;
+      justify-content: start;
+      flex-direction: column;
+      margin: auto;
     }
   }
 }

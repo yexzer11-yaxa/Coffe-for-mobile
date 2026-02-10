@@ -1,24 +1,18 @@
-.intro {
-  height: 500px;
-  background-image: url("../images/Bitmap\ \(1\).jpg");
+.intro3 {
+  background-image: url("../images/Bitmap\ \(3\).jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 1200px;
-  height: 500px;
-  margin: 30px auto;
+  padding: 100px;
   border-radius: 10px;
+  margin-top: 30px;
 }
 
-.intro__container {
+.intro3__container {
   display: flex;
   flex-direction: column;
 }
 
-.intro__left {
-  margin: 0 100px;
-}
-
-.intro__title {
+.intro3__title {
   width: 500px;
   height: 150px;
   font-family: "Fraunces";
@@ -27,10 +21,9 @@
   font-size: 72px;
   line-height: 72px;
   color: #fefcf7;
-  margin-top: 120px;
 }
 
-.intro__text {
+.intro3__text {
   width: 445px;
   font-family: "Barlow";
   font-style: normal;
@@ -44,19 +37,74 @@
   mix-blend-mode: normal;
   opacity: 0.8;
 }
-
-@media only screen and (max-width: 480px) {
-  .intro {
+@media (max-width: 375px) {
+  .intro3 {
     width: 90%;
-    height: auto;
-    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    .intro__title {
-      font-size: 35px;
+    .intro3__title {
+      width: 250px;
+      margin: auto;
+      font-family: "Fraunces";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 28px;
+      line-height: 35px;
+      color: #fefcf7;
+      text-align: center;
     }
-    .intro__text {
+
+    .intro3__text {
       width: 100%;
-      margin: 20px 0;
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+      /* or 162% */
+
+      color: #fefcf7;
+
+      mix-blend-mode: normal;
+      opacity: 0.8;
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 750px) {
+  .intro3__container {
+    width: 90%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+
+    .intro3__title {
+      width: 320px;
+      margin: 0 10px;
+      font-family: "Fraunces";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 38px;
+      line-height: 35px;
+      color: #fefcf7;
+    }
+
+    .intro3__text {
+      width: 70%;
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+      /* or 162% */
+
+      color: #fefcf7;
+
+      mix-blend-mode: normal;
+      opacity: 0.8;
+      margin: 0 10px;
     }
   }
 }
